@@ -1,0 +1,243 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{帅宗瑭}{}{ \\
+\href{mailto:michael.zongtang@qq.com}{michael.zongtang@qq.com} | +86-139-5518-3298
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+\setstretch{1.25}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%% 利用tikz来定位照片，部分招聘单位可能需要“以貌取人”
+%\begin{tikzpicture}[remember picture, overlay] 
+%  \node[anchor = north west] at ($(current page.north west)+(+1cm,-4cm)$) {\includegraphics[height=4.2cm]{avatar}};
+%\end{tikzpicture}%
+
+
+\section{教育背景} 
+
+\subsection{纽约大学}
+\descript{Tandon工程学院}
+\descript{• 本科：计算机工程}
+\descript{• 主修课程包括：数据结构、面向对象编程、计算机体系结构与组织、计算机操作系统、软件工程、电路与电子学、嵌入式系统}
+\descript{• 预提前于2023年末毕业 | 大四在读}
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{链接} 
+%GitHub://  \href{https://github.com/fuujiro}{\custombold{@fuujiro}} \\
+%Blog://  \href{https://blog.fuujiro.com}{\custombold{fuujiro's island}} \\
+%知乎:// \href{https://www.zhihu.com/people/fuujiro/activities}{\custombold{fuujiro}} \\
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{自我介绍}
+\subsection{\emph{聆听之艺，融合众韵}}
+\quad \\
+% \\
+拥有多年团队合作经验 \\
+进行过企业管理相关培训 \\
+热衷于学习软/硬件开发 \\
+理解Linux/Unix系统并熟练使用 \\
+可使用SQL/Flask/HTML全栈编写\\
+具有敏捷软件开发能力 \\
+希望可以探索各行各业 \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{专业技能}
+\textbullet{}   C/C++ \textbullet{}   Python \textbullet{} Java \\
+\textbullet{} SQL \textbullet{}   FLask \textbullet{} HTML \\
+\textbullet{} Apache \textbullet{}   PHP  \\
+\textbullet{} Verilog  \\
+\textbullet{} Latex \textbullet{} Vim 
+
+\textbullet{} Linux \textbullet{} macOS\\ 
+\textbullet{} Agile Software Development\\ 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Language
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{语言} 
+
+\textbullet{} 英语-专业水平 \\
+\textbullet{} 中文-母语水平 \\
+\textbullet{} 日语-对话水平\\
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+\setstretch{0.92}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Intern
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{工作经历}
+
+\runsubsection{中国工商银行}
+\descript{| “2023暑期星令营”合肥分行实习生  }
+\location{2023年6月至2023年8月}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+• 分别在支行网点与合肥分行进行了实岗培训，掌握了银行服务内容并深度了解了银行内部结构布局。\\
+• 在导师的带领下完成了课题研究：以数字化集成了工行普惠金融为背景的全线上“数字化农产品交易金融服务平台”。\\
+• 在小组课题研究中担任组长一职，负责保障组员内部分工以及与导师的密切沟通。\\
+\sectionsep
+
+\runsubsection{合肥佳斯特科技有限公司}
+\descript{| 服务器管理员助理  }
+\location{2020年5月至2020年8月}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+• 在 Just 有限公司担任服务器管理助理。\\
+• 学习并维护 LAMP（Linux、Apache、MySQL 和 PHP）框架结构。\\
+• 使用 AcceptFiler 配置和 MPM（多进程模块）进行网络安全性维护。\\
+\sectionsep
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{个人项目}
+\runsubsection{MoHa: 一款在线辅导应用程序}
+\location{ 2023年1月至今 | Python}
+• 旨在为大众提供专业化的一对一辅导，同时为大学生提供财务收入的应用程序。\\
+• 使用Scrum（敏捷）流程。\\
+• 代码使用Python编写，全栈开发。\\
+• 将于2023年11月之前上线\\
+\sectionsep
+
+\runsubsection{E20汇编编译器}
+\location{ 2022年1月至2022年5月 | C++}
+• 用于将E20架构汇编语言转换为机器码。\\
+• 使用C++编写，具有位操作、位指定变量和指针以优化内存表现。\\
+• 使用bash命令在Linux环境下构建和测试。\\
+\sectionsep
+
+\runsubsection{航空公司售票系统}
+\location{ 2022年1月至2022年5月 | SQL | Python}
+• 在PHPMyAdmin界面下使用SQL编写。\\
+• 使用Flask作为UI框架。\\
+• 为虚构的航空公司创建了一个功能性数据库。\\
+• 支持系统中的搜索、购票和航班状态查询功能。\\
+\sectionsep
+
+\runsubsection{婴儿窒息呼吸检测设备}
+\location{ 2022年9月至2022年12月 | Verilog}
+• 装置能够检测婴儿睡眠期间的呼吸停止。\\
+• 能够识别并监测婴儿的呼吸模式，并在呼吸停止时向管理员发出警报。\\
+• 设备由单片机、声音识别装置和报警系统构建。\\
+• 代码使用C编写，使用模拟数字转换器进行模式识别。\\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{奖项}
+
+\runsubsection{第16届合肥市科技创新市长奖}
+\descript{}
+\location{2018，合肥}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\sectionsep
+
+\runsubsection{中国青少年机器人竞赛冠军}
+\descript{VEX项目}
+\location{2018，合肥}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{兴趣爱好} 
+
+\textbullet{} 阅读\\
+\textbullet{} 胶片摄影\\
+\textbullet{} 足球\\
+\sectionsep
+
+\end{minipage} 
+\end{document}
